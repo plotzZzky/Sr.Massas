@@ -1,3 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faSnowflake } from '@fortawesome/free-solid-svg-icons'
+
+library.add( faSnowflake )
+
+
 export default function Card(props) {
 
     function go_to_profile() {
@@ -6,12 +13,13 @@ export default function Card(props) {
 
     return (
         <div className='card'>
-            <img className='profile-picture' src={props.data.image}></img>
+            <FontAwesomeIcon icon="fa-solid fa-snowflake" style={{display: props.data.snow}} className='snow-icon' />
+            <img className='card-img' src={props.data.image}></img>
             <div className='div-align-card-text'>
                 <a className='card-name'> {props.data.name} </a>
                 <a className='card-price'> R$ {props.data.price} </a>
                 <a style={{display: 'none'}}> {props.data.category} </a>
-                <button className="order-btn" onClick={go_to_profile}> Peça pelo ifood </button>
+                <button className="order-btn" onClick={go_to_profile}> <span>Peça pelo ifood</span> </button>
                 <div className="card-desc">
                     <p>{props.data.desc}</p>
                     <a> {props.data.amount}</a>

@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight, faSnowflake } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faAngleRight )
+library.add(faAngleRight, faSnowflake )
 
 import NavBar from "../elements/navbar"
 import Card from '../elements/Card'
@@ -12,7 +12,7 @@ import './cardapio.css'
 import data from "../media/cardapio.json"
 
 
-export default function Cradapio() {
+export default function Cardapio() {
     const [getCategory, setCategory] = useState("");
     const [getFood, setFood] = useState(data.food);
 

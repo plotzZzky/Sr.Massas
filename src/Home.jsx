@@ -1,5 +1,10 @@
 import NavBar from './elements/navbar'
 import Ifood from './media/ifood-logo.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faGithub )
 
 
 export default function App() {
@@ -32,7 +37,7 @@ export default function App() {
             </div>
 
             <footer>
-                <a href='https://www.github.com/plotzzzky'> Site feito por dev plotzky acesse meu GitHub aqui "https://www.github.com/plotzzzky"</a>
+                <a href='https://www.github.com/plotzzzky'> Dev: Plotzky <FontAwesomeIcon icon="fa-brands fa-github" /></a>
             </footer>
         </>
   )

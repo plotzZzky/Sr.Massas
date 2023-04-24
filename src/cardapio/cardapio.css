@@ -62,39 +62,37 @@
 .div-cards {
     width: calc(100% - 15em);
     height: auto;
-    min-height: calc(100vh - 5em);
+    min-height: 90vh;
     margin-left: 15em;
     margin-top: -6em;
     display: flex;
     justify-content: start;
-    gap: 1em 1em;
+    gap: 10px 10px;
     flex-wrap: wrap;
     z-index: 900;
 }
 
 .card {
-    width: 300px;
-    height: 464px;
-    background-color: white;
+    max-height: 28em;
     display: flex;
     flex-direction: column;
-    gap: 1em 0;
-    box-shadow: var(--shadow);
     border-radius: 0.3em;
     position: relative;
+    flex: 0 1 24%;
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
 }
 
-.profile-picture {
-    width: 300x;
-    height: 320px;
+.card-img {
+    width: 100%;
+    height: 80%;
     border-radius: 4px;
 }
 
 .div-align-card-text {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
+    padding: 5px 0;
 }
 
 .card-name {
@@ -115,7 +113,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    padding: 8px;
     color: var(--fontColor_sec);
     font-size: 1em;
     background-color: var(--color_accent);
@@ -130,7 +128,6 @@
     bottom: 40px;
     left: 2%;
     width: calc(96% - 8px);
-    height: 140px;
     padding: 4px;
     background-color: white;
     box-shadow: var(--shadow);
@@ -141,10 +138,21 @@
 
 .card:hover .card-desc {
     display: block;
-    animation: fadeIn 4s;
+    animation: fadeIn 2s;
 }
 
-@media screen and (max-width: 1250px) {
+.snow-icon {
+    font-size: 1.6em;
+    position: absolute;
+    padding: 4px;
+    inset: 0 0 auto auto;
+    border-bottom-left-radius: 80%;
+    padding-left: 10px;
+    color: #9ACFFF;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 1360px) {
     .sidebar {
         width: 10em;
         font-size: 1em;
@@ -158,26 +166,14 @@
     .div-cards{
         width: calc(100% - 28px);
         margin-left: 20px;
-        justify-content: space-around;
-        gap: 1em 8px;
     }
 
-    .card {
-        width: 200px;
-        height: 360px;
+    .card-img {
+        height: 75%;
     }
 
-    .card-name {
-        font-size: 0.9em;
-    }
-
-    .profile-picture {
-        width: 200px;
-        height: 210px;
-    }
-
-    .card-desc {
-        height: 180px;
+    .card-name, .card-price, .card-desc, .order-btn {
+        font-size: 0.9rem;
     }
 
     .sidebar.responsive {
@@ -186,23 +182,47 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 820px) {
+
     .card {
-        width: 150px;
-        height: 320px;
+        flex: 0 0 32%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .card {
+        flex: 0 0 31%;
     }
 
-    .card-name {
-        font-size: 0.8em;
+    .card-name, .card-price, .card-desc , .order-btn{
+        font-size: 0.7rem;
     }
 
-    .profile-picture {
-        width: 150px;
-        height: 170px;
+    .card-img {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-img {
+        height: 50%;
     }
 
-    .card-desc {
-        height: auto;
-        min-height: 120px;
+    .card {
+        flex: 0 0 30%;
     }
+
+    .order-btn span {
+        display: none;
+      }
+
+    .order-btn:after {
+        content: 'ifood';
+    }
+
+    .card-name, .card-price, .card-desc , .order-btn{
+        font-size: 0.6rem;
+    }
+
 }

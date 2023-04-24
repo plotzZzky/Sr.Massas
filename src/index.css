@@ -111,9 +111,8 @@ body {
 footer {
   background-color: #333;
   width: calc(100% - 2em);
-  height: 64px;
+  height: 32px;
   padding: 1em;
-  padding-top: 2em;
   margin: auto;
   display: flex;
   justify-content: space-around;
