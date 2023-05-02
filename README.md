@@ -2,4 +2,4 @@
 
 ## Site feito para um Delivery de comidas feito com React e ViteJs
 
-<a href="https://plotzzzky.github.io/Sr.Massas/cardapio/">  Acesse aqui
+<a href="https://plotzzzky.github.io/Sr.Massas/">  Acesse aqui
