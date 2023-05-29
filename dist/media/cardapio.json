@@ -1,0 +1,32 @@
+{
+    "food": [
+        {"id": 0, "name": "Lasanha de Macarrão", "category": "Italiana", "desc": "Deliciosa lasanha de macarrão caseira diversos sabores disponiveis", 
+        "price": "22.00", "amount": "Serve: 1 pessoa", "image": "../media/Lasanha.jpg", "snow": "none"},
+        {"id": 1, "name": "Panquecas", "category": "Panquecas", "desc": "Deliciosas Panquecas com molho e queijo, disponivel em diversos sabores", 
+        "price": "22.00", "amount": "Server: 1 pessoa", "image": "../media/Panquecas.webp", "snow": "none"},
+        {"id": 2, "name": "Pastel", "category": "Salgados", "desc": "Patel de massa amanteiga muito crocante com diversas opções de recheios", 
+        "price": "7.00", "amount": "1 Unidade", "image": "../media/Pastel.jpg", "snow": "none"},
+        {"id": 3, "name": "Batata recheada", "category": "Brasileira", "desc": "Batata recheada com queijo, acompanha arroz", 
+        "price": "22.00", "amount": "Serve: 1 pessoa", "image": "../media/Batata_recheada.jpg", "snow": "none"},
+        {"id": 4, "name": "Nhoque", "category": "Italiana", "desc": "Nhoque de mandioca e molho de carne vermelha, acompanha arroz", 
+        "price": "22.00", "amount": "Serve: 1 pessoa", "image": "../media/Nhoque.jpg", "snow": "none"},
+        {"id": 5, "name": "Carne de panela", "category": "Brasileira", "desc": "Carne de panela macia e cremosa com molho e batatas, acompanha arroz", 
+        "price": "22.00", "amount": "Serve: 1 pessoa", "image": "../media/Panela.jpg", "snow": "none"},
+        {"id": 6, "name": "Água mineral sem gas", "category": "Bebidas", "desc": "Água mineral sem gás 600ml", 
+        "price": "4.00", "amount": "600ml", "image": "../media/Agua.webp", "snow": "block"},
+        {"id": 7, "name": "Água mineral com gas", "category": "Bebidas", "desc": "Água mineral com gás 600ml", 
+        "price": "4.00", "amount": "600ml", "image": "../media/Agua_gas.webp", "snow": "block"},
+        {"id": 8, "name": "Lasanha de Macarrão", "category": "Congelados", "desc": "Deliciosa lasanha de macarrão caseira diversos sabores disponiveis", 
+        "price": "18.00", "amount": "Serve: 1 pessoa", "image": "../media/Lasanha.jpg", "snow": "block"},
+        {"id": 9, "name": "Panquecas ", "category": "Congelados", "desc": "Deliciosas Panquecas com molho e queijo, disponivel em diversos sabores", 
+        "price": "18.00", "amount": "Serve: 1 pessoa", "image": "../media/Panquecas.webp", "snow": "block"},
+        {"id": 10, "name": "Batata recheada", "category": "Congelados", "desc": "Batata recheada com queijo, acompanha arroz", 
+        "price": "20.00", "amount": "Serve: 1 pessoa", "image": "../media/Batata_recheada.jpg", "snow": "block"},
+        {"id": 11, "name": "Nhoque", "category": "Congelados", "desc": "Nhoque de mandioca e molho de carne vermelha, acompanha arroz", 
+        "price": "20.00", "amount": "Serve: 1 pessoa", "image": "../media/Nhoque.jpg", "snow": "block"},
+        {"id": 12, "name": "Carne de panela", "category": "Congelados", "desc": "Carne de panela macia e cremosa com molho e batatas, acompanha arroz", 
+        "price": "20.00", "amount": "Serve: 1 pessoa", "image": "../media/Panela.jpg", "snow": "block"},
+        {"id": 13, "name": "Enrolados", "category": "Salgados", "desc": "Salgado enrolado muito macio com diversas opções de recheios", 
+        "price": "7.00", "amount": "1 Unidade", "image": "../media/Enrolado.jpg", "snow": "none"}
+    ]
+}
