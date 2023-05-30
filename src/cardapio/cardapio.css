@@ -1,228 +1,247 @@
 .sidebar {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    height: 100%;
-    width: 15em;
-    background-color: var(--color_accent);
-    z-index: 990;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  height: 100%;
+  width: 10em;
+  background-color: var(--color_accent);
+  z-index: 990;
+  transition: all 300ms;
 }
 
 .sidebar-icon {
-    display: none;
-    width: 40px;
-    height: 44px;
-    font-size: 1.8em;
-    border-radius: 50%;
-    right: -16px;
-    top: 36%;
-    position: absolute;
-    background-color: var(--color_accent);
-    color: var(--fontColor_sec);
-    z-index: 991;
+  display: none;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  right: -10px;
+  top: 36%;
+  position: absolute;
+  background-color: var(--color_accent);
+  color: var(--fontColor_sec);
+  z-index: 991;
 }
 
 .icon-arrow {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .sidebar-align-items {
-    width: calc(100% - 2em);
-    height: auto;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em 0;
-    color: var(--fontColor_pri);
+  width: calc(100% - 10px);
+  height: auto;
+  padding: 1em 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em 0;
+  color: var(--fontColor_pri);
 }
 
 .sidebar-filter {
-    width: calc(100% - 12px);
-    height: auto;
-    padding: 4px;
-    border: none;
-    border-radius: 4px;
-    color: var(--fontColor_pri);
-    font-size: 1em;
+  width: calc(100% - 28px);
+  height: auto;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  color: var(--fontColor_pri);
+  font-size: 1em;
 }
 
 .sidebar-category {
-    cursor: pointer;
-    font-size: 1.2em;
-    font-weight: 600;
-    border-bottom: 2px solid var(--color_accent);
-    color: var(--fontColor_sec);
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color_accent);
+  color: var(--fontColor_sec);
 }
 
-.sidebar-category:hover  {
-    border-bottom: 2px solid;
+.sidebar-category:hover {
+  border-bottom: 2px solid;
 }
 
 .div-cards {
-    width: calc(100% - 15em);
-    height: auto;
-    min-height: 90vh;
-    margin-left: 15em;
-    margin-top: -6em;
-    display: flex;
-    justify-content: start;
-    gap: 10px 10px;
-    flex-wrap: wrap;
-    z-index: 900;
+  width: calc(100% - 10em);
+  height: auto;
+  min-height: 90vh;
+  margin-left: 10em;
+  margin-top: -6.7em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px 5px;
+  flex-wrap: wrap;
+  z-index: 900;
 }
 
 .card {
-    max-height: 28em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.3em;
-    position: relative;
-    flex: 0 1 24%;
-    background-color: #ffffff;
-    box-shadow: var(--shadow);
+  max-height: 28em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3em;
+  position: relative;
+  flex: 0 1 24.6%;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
 }
 
 .card-img {
-    width: 100%;
-    height: 80%;
-    border-radius: 4px;
+  width: 100%;
+  height: 80%;
+  border-radius: 4px;
 }
 
 .div-align-card-text {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
 }
 
 .card-name {
-    font-size: 1.2em;
-    font-weight: 600;
-    color: var(--fontColor_pri)
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--fontColor_pri)
 }
 
 .card-price {
-    font-size: 1em;
-    font-weight: 600;
-    color: var(--fontColor_pri);
-    opacity: 0.8;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--fontColor_pri);
+  opacity: 0.8;
 }
 
 .order-btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 8px;
-    color: var(--fontColor_sec);
-    font-size: 1em;
-    background-color: var(--color_accent);
-    border: none;
-    cursor: pointer;
-    z-index: 900;
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  padding: 8px;
+  color: var(--fontColor_sec);
+  font-size: 1em;
+  background-color: var(--color_accent);
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .card-desc {
-    display: none;
-    position: absolute;
-    bottom: 40px;
-    left: 2%;
-    width: calc(96% - 8px);
-    padding: 4px;
-    background-color: white;
-    box-shadow: var(--shadow);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    transition: 800ms;
+  display: none;
+  position: absolute;
+  bottom: 38px;
+  left: 2%;
+  width: calc(96% - 8px);
+  padding: 4px;
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  transition: 800ms;
 }
 
 .card:hover .card-desc {
-    display: block;
-    animation: fadeIn 2s;
+  display: block;
+  animation: fadeIn 2s;
 }
 
 .snow-icon {
-    font-size: 1.6em;
-    position: absolute;
-    padding: 4px;
-    inset: 0 0 auto auto;
-    border-bottom-left-radius: 80%;
-    padding-left: 10px;
-    color: #9ACFFF;
-    background-color: #ffffff;
+  font-size: 1.6em;
+  position: absolute;
+  padding: 4px;
+  inset: 0 0 auto auto;
+  border-bottom-left-radius: 80%;
+  padding-left: 10px;
+  color: #9ACFFF;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 1360px) {
-    .sidebar {
-        width: 10em;
-        font-size: 1em;
-        margin-left: -9em;
-    }
+  .sidebar {
+    width: 10em;
+    font-size: 0.8em;
+    margin-left: -9.5em;
+  }
 
-    .sidebar-icon {
-        display: block;
-    }
+  .sidebar-icon {
+    display: block;
+  }
 
-    .div-cards{
-        width: calc(100% - 28px);
-        margin-left: 20px;
-    }
+  .div-cards {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+  }
 
-    .card-img {
-        height: 75%;
-    }
+  .card {
+    flex: 0 0 24.6%;
+  }
 
-    .card-name, .card-price, .card-desc, .order-btn {
-        font-size: 0.9rem;
-    }
+  .card-img {
+    height: 75%;
+  }
 
-    .sidebar.responsive {
-        width: 9em;
-        margin-left: 0;
-    }
+  .card-desc {
+    bottom: 36px;
+  }
+
+  .card-name,
+  .card-price,
+  .card-desc,
+  .order-btn {
+    font-size: 0.9rem;
+  }
+
+  .sidebar.responsive {
+    width: 9em;
+    margin-left: 0;
+  }
 }
 
-@media screen and (max-width: 820px) {
-
-    .card {
-        flex: 0 0 32%;
-    }
+@media screen and (max-width: 1000px) {
+  .card {
+    flex: 0 0 calc(33% - 2px);
+  }
 }
 
 @media screen and (max-width: 620px) {
+  .card-name,
+  .card-price,
+  .card-desc,
+  .order-btn {
+    font-size: 0.7rem;
+  }
 
-    .card {
-        flex: 0 0 31%;
-    }
+  .card-img {
+    height: 70%;
+  }
 
-    .card-name, .card-price, .card-desc , .order-btn{
-        font-size: 0.7rem;
-    }
-
-    .card-img {
-        height: 60%;
-    }
+  .card-desc {
+    bottom: 30px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-    .card-img {
-        height: 50%;
-    }
+@media screen and (max-width: 460px) {
+  .card {
+    flex: 0 0 32%;
+  }
 
-    .card {
-        flex: 0 0 30%;
-    }
+  .card-img {
+    height: 65%;
+  }
 
-    .order-btn span {
-        display: none;
-      }
+  .order-btn span {
+    display: none;
+  }
 
-    .order-btn:after {
-        content: 'ifood';
-    }
+  .order-btn:after {
+    content: 'ifood';
+  }
 
-    .card-name, .card-price, .card-desc , .order-btn{
-        font-size: 0.6rem;
-    }
+  .card-name,
+  .card-price,
+  .card-desc,
+  .order-btn {
+    font-size: 0.6rem;
+    padding: 2px;
+  }
 
+  .card-desc {
+    bottom: 16px;
+  }
 }

@@ -1,5 +1,6 @@
 import NavBar from './elements/navbar'
 import Ifood from './media/ifood-logo.webp'
+import IfoodRed from './media/ifood-logo-red.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -23,6 +24,7 @@ export default function App() {
           <button className='btn' onClick={go_to_profile}>
             <a> Peça já pelo </a>
             <img src={Ifood} className="ifood-logo"></img>
+            <img src={IfoodRed} className="ifood-logo-red"></img>
           </button>
         </div>
       </div>

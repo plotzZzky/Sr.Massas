@@ -20,12 +20,13 @@
 
 .brand {
   width: calc(var(--menu_size) + 10px);
-  height: 50px;
-  padding: 0;
+  height: 52px;
+  padding: 0px 8px;
   color: var(--fontColor_sec);
   align-items: center;
   cursor: pointer;
   display: inline-flex;
+  position: relative;
 }
 
 .brand-name {
@@ -38,18 +39,29 @@
   height: 36px;
 }
 
-.brand:hover {
-  color: var(--color_navbar_font_hover);
-  background-color: var(--background);
-}
- 
-.brand:hover .brand-name {
-  color: var(--fontColor_pri);
+.brand::before {
+  content: '';
+  position: absolute;
+  inset: 4px 0;
+  width: calc(var(--menu_size) + 10px);
+  padding: 12px 8px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform .2s ease-in-out;
+  background-color: var(--fontColor_sec);
+  border: none;
+  border-radius: 4px;
+  z-index: -1;
 }
 
-.brand:hover .brand-logo {
-  color: var(--fontColor_pri);
-  filter: invert(0);
+.brand:hover::before {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+.brand:hover , .brand:hover * {
+  transition: 250ms;
+  color: var(--color_accent);
 }
 
 .menu {
@@ -71,34 +83,75 @@
 
 .menu-item {
   width: var(--menu_size);
-  padding: 12px 0px;
-  margin-right: 4px;
-  margin-left: 4px;
-  color: var(--fontColor_sec);
+  padding: 14px 8px;
   text-align: center;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
-.menu-item:hover, .menu-item:hover a{
-  color: var(--fontColor_pri);
-  background-color: var(--background);
-  font-weight: 500;
+.menu-item * {
+  color: var(--fontColor_sec);
 }
 
-.menu-item:hover .icon-menu {
-  color: var(--fontColor_pri);
+.menu-item::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  padding: 12px 8px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform .2s ease-in-out;
+  background-color: var(--fontColor_sec);
+  border: none;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.menu-item:hover::before {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+.menu-item:hover , .menu-item:hover * {
+  transition: 250ms;
+  color: var(--color_accent);
 }
 
 .menu-icon {
   display: none;
-  width: 40px;
-  height: 28px;
-  margin: 0px;
+  width: 48px;
+  height: auto;
+  position: relative;
 }
 
-.menu-icon:hover {
-  filter: invert(100);
-  background-color: var(--fontColor_pri);
+.menu-icon * {
+  font-size: 1.5rem;
+  padding: 2px 0 0;
+}
+
+.menu-icon::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform .1s ease-in-out;
+  color: var(--color_accent);
+  background-color: var(--fontColor_sec);
+  border: none;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.menu-icon:hover::before {
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+.menu-icon:hover , .menu-icon:hover * {
+  transition: 200ms;
+  color: var(--color_accent);
 }
 
 @media screen and (max-width: 1300px) {
@@ -132,8 +185,5 @@
   }
   .menu.responsive .menu-item {
       display: block;
-      text-align: left;
-      padding-left: 8px;
   }
-  .menu.responsive .menu-item a {text-align: left;}
 }
